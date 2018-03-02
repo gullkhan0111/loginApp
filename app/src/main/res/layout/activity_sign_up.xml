@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222431"
+    tools:context="com.example.haseeb.loginapp.activities.SignUpActivity"
+
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/EnterUsername"
+        android:layout_alignLeft="@+id/EnterUsername"
+        android:layout_alignStart="@+id/EnterUsername"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:src="@drawable/loginlogo" />
+
+    <EditText
+        android:id="@+id/EnterUsername"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Enterpassword"
+        android:layout_alignLeft="@+id/Enterpassword"
+        android:layout_alignStart="@+id/Enterpassword"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="@drawable/selector"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:drawablePadding="10dp"
+        android:drawableTint="@drawable/selector"
+        android:hint="username"
+        android:textColor="@drawable/selector"
+        android:textColorHint="@drawable/selector"
+        />
+
+    <EditText
+        android:id="@+id/Enterpassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cityname"
+        android:layout_alignLeft="@+id/cityname"
+        android:layout_alignStart="@+id/cityname"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPassword"
+
+
+        android:backgroundTint="@drawable/selector"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:drawablePadding="10dp"
+        android:drawableTint="@drawable/selector"
+        android:hint="password"
+        android:textColor="@drawable/selector"
+        android:textColorHint="@drawable/selector"
+        />
+
+    <EditText
+        android:id="@+id/cityname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signUp"
+        android:layout_alignStart="@+id/signUp"
+        android:layout_centerVertical="true"
+
+        android:backgroundTint="@drawable/selector"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:drawablePadding="10dp"
+        android:drawableTint="@drawable/selector"
+        android:hint="City Name"
+        android:textColor="@drawable/selector"
+        android:textColorHint="@drawable/selector"
+
+
+        />
+
+    <Button
+        android:id="@+id/signUp"
+
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/cityname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:background="#4eb7cd"
+        android:text="SignUp"
+        android:textColor="#ffff"
+
+
+        />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signUp"
+        android:layout_alignStart="@+id/signUp"
+
+        android:layout_below="@+id/cityname"
+
+
+
+        android:backgroundTint="@drawable/selector"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:drawablePadding="10dp"
+        android:drawableTint="@drawable/selector"
+        android:hint="Age"
+        android:textColor="@drawable/selector"
+        android:textColorHint="@drawable/selector"
+
+        />
+
+
+
+</RelativeLayout>

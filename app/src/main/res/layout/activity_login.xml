@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222431"
+    tools:context="com.example.haseeb.loginapp.activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/loginlogo" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="33dp"
+
+        android:backgroundTint="@drawable/selector"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:drawablePadding="10dp"
+        android:drawableTint="@drawable/selector"
+        android:hint="username"
+        android:textColor="@drawable/selector"
+        android:textColorHint="@drawable/selector" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/username"
+        android:backgroundTint="@drawable/selector"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:drawablePadding="10dp"
+        android:drawableTint="@drawable/selector"
+        android:hint="password"
+        android:inputType="textPassword"
+
+        android:paddingBottom="20dp"
+        android:textColor="@drawable/selector"
+        android:textColorHint="@drawable/selector" />
+
+    <Button
+        android:id="@+id/logIn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/saveLoginCheckBox"
+        android:layout_marginTop="13dp"
+        android:background="#3bb0ee"
+        android:text="Sign in"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+
+    <CheckBox
+        android:id="@+id/saveLoginCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/password"
+        android:text="Remember Me"
+        android:textColor="@drawable/selector"
+
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/Rigester"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/logIn"
+        android:layout_alignStart="@+id/logIn"
+        android:layout_below="@+id/logIn"
+        android:layout_marginTop="15dp"
+        android:background="#3bafed"
+        android:text="Register"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

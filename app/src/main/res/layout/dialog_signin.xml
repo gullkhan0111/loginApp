@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222431"
+    >
+<EditText
+    android:id="@+id/SearchUserName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:textSize="20dp"
+
+    android:backgroundTint="@drawable/selector"
+    android:drawableLeft="@drawable/ic_action_user"
+    android:drawablePadding="10dp"
+    android:drawableTint="@drawable/selector"
+    android:hint="username"
+    android:textColor="@drawable/selector"
+    android:textColorHint="@drawable/selector"
+    />
+    <EditText
+        android:id="@+id/SearchCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SearchUserName"
+
+        android:textSize="20dp"
+
+
+        android:backgroundTint="@drawable/selector"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:drawablePadding="10dp"
+        android:drawableTint="@drawable/selector"
+        android:hint="City Name"
+        android:textColor="@drawable/selector"
+        android:textColorHint="@drawable/selector"
+        />
+    <EditText
+        android:id="@+id/SearchAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SearchCityName"
+        android:textSize="20dp"
+        android:backgroundTint="@drawable/selector"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:drawablePadding="10dp"
+        android:drawableTint="@drawable/selector"
+        android:hint="Age"
+        android:textColor="@drawable/selector"
+        android:textColorHint="@drawable/selector"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#4eb7cd"
+        android:id="@+id/srchButton"
+        android:text="Search User"
+
+        android:layout_below="@+id/SearchAge"
+        />
+
+
+</RelativeLayout>
+
